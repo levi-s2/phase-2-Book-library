@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import BooksCard from "./BooksCard";
+import NavBar from "./NavBar";
 
 function Books() {
     const [books, setBooks] = useState([])
@@ -19,6 +20,9 @@ function Books() {
 
     return ( 
         <div>
+            <header>
+        <NavBar />
+      </header>
             {mappedBooks}
         </div>
     )

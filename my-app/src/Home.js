@@ -1,11 +1,11 @@
 import React from "react"; 
-import Books from "./Books";
+import NavBar from "./NavBar";
 
 function Home() {
     return (
         <div>
             <h1>Book Library</h1>
-            <Books />
+            <NavBar />
         </div>
     )
 }
