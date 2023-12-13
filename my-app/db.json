@@ -1,64 +1,64 @@
 {
   "popularBooks": [
-      {
-          "id": 0,
-          "name": "Don Quixote",
-          "author": "Miguel de Cervantes",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM9Wr8_pMowlwxxNkH5qfxj7rPVVyLV5Eni3TBev7OcaLTkv5oHFd6biiJ20BEyUP6jOo&usqp=CAU"
-      }, 
-      {
-          "id": 1,
-          "name": "The Divine Comedy",
-          "author": "Dante Alighieri",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORUY1hSkajLOMH2GsR9BrC4uwx4xjpYZTnEnx9XT5nQpMfKDrxsoi3dEftM5ihX5XW7A&usqp=CAU"
-      },
-      {
-          "id": 2,
-          "name": "The Great Gatsby",
-          "author": "F. Scott Fitzgerald",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfi4CpGrqQPAt_I5Dp-WAw4yZxO7h7TL1_6Ad8tvuX94v-yR8OEacS13228EeBeRc7IbY&usqp=CAU"
-      },
-      {
-          "id": 3,
-          "name": "The Odyssey",
-          "author": "Homer",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShh2ytsVe5-agGpwgqV6jO369L--TEwrK9JA&usqp=CAU"
-      },
-      {
-          "id": 4,
-          "name": "Moby Dick",
-          "author": "Herman Melville",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRqpqSNIfhbHnJxzTddCF7zyqGDqB2I2FkWfxvC_hrfJ1iYUsSYjTBYNqer2RFhMtCU4&usqp=CAU"
-      },
-      {
-          "id": 5,
-          "name": "War and Peace",
-          "author": "Leo Tolstoy",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfOo6n_7PHKP6cKLFmLuKAoIEDUS5olHEQw&usqp=CAU"
-      },
-      {
-          "id": 6,
-          "name": "In Search of Lost Time",
-          "author": "Marcel Proust",
-          "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMMLC4XpgA50gr6eqiKxT2SkdnOLsiaKDaFDPkIEWH3n16HdFMN_DFwfhNss4VPIUZek&usqp=CAU"
-      },
-      {
-          "id": 7,
-          "name": "The Prince",
-          "author": "Niccolo Machiavelli",
-          "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/02/26/50/9780226500430.jpg/jcr:content/9780226500430.jpg"
-      },
-      {
+    {
+      "id": 0,
+      "name": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM9Wr8_pMowlwxxNkH5qfxj7rPVVyLV5Eni3TBev7OcaLTkv5oHFd6biiJ20BEyUP6jOo&usqp=CAU"
+    },
+    {
+      "id": 1,
+      "name": "The Divine Comedy",
+      "author": "Dante Alighieri",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORUY1hSkajLOMH2GsR9BrC4uwx4xjpYZTnEnx9XT5nQpMfKDrxsoi3dEftM5ihX5XW7A&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfi4CpGrqQPAt_I5Dp-WAw4yZxO7h7TL1_6Ad8tvuX94v-yR8OEacS13228EeBeRc7IbY&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "The Odyssey",
+      "author": "Homer",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShh2ytsVe5-agGpwgqV6jO369L--TEwrK9JA&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "Moby Dick",
+      "author": "Herman Melville",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgRqpqSNIfhbHnJxzTddCF7zyqGDqB2I2FkWfxvC_hrfJ1iYUsSYjTBYNqer2RFhMtCU4&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "War and Peace",
+      "author": "Leo Tolstoy",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfOo6n_7PHKP6cKLFmLuKAoIEDUS5olHEQw&usqp=CAU"
+    },
+    {
+      "id": 6,
+      "name": "In Search of Lost Time",
+      "author": "Marcel Proust",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMMLC4XpgA50gr6eqiKxT2SkdnOLsiaKDaFDPkIEWH3n16HdFMN_DFwfhNss4VPIUZek&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "name": "The Prince",
+      "author": "Niccolo Machiavelli",
+      "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/02/26/50/9780226500430.jpg/jcr:content/9780226500430.jpg"
+    },
+    {
       "id": 8,
       "name": "King Lear",
       "author": " William Shakespeare",
       "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/08/66/98/9780866987974.jpg/jcr:content/9780866987974.jpg"
-      },
-      {
-          "id": 9,
-          "name": "Alice's Adventures in Wonderland",
-          "author": "Lewis Carroll",
-          "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/19/88/96/9781988963372.jpg/jcr:content/9781988963372.jpg"
-      }
+    },
+    {
+      "id": 9,
+      "name": "Alice's Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/19/88/96/9781988963372.jpg/jcr:content/9781988963372.jpg"
+    }
   ]
 }
