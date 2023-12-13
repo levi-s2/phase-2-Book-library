@@ -26,6 +26,6 @@ function Books() {
             {mappedBooks}
         </div>
     )
-}
+};
 
 export default Books
