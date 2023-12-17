@@ -4,6 +4,8 @@ import NavBar from "./NavBar";
 function Request() {
 const [title, setTitle] = useState("")
 const [author, setAuthor] = useState("")
+const [image, setImage] = useState("")
+const [request, setRequest] = useState([])
 
 function handleSubmit(e) {
     e.preventDefault();
@@ -19,7 +21,7 @@ function handleSubmit(e) {
         body: JSON.stringify(itemData),
     })
     .then(r => r.json())
-    .then(newItem => console.log(newItem))
+    .then(newItem => setRequest(newItem))
   }
 
   return (
@@ -43,8 +45,22 @@ function handleSubmit(e) {
           value={author}
           onChange={e => setAuthor(e.target.value)}
         />
+        <input
+          type="text"
+          name="name"
+          placeholder="image URL(optional)"
+          value={image}
+          onChange={e => setImage(e.target.value)}
+        />
         <button type="submit">submit</button>
             </form>
+            <div>
+              <h2>Requested Books:</h2>
+              <ul>
+                <p>{request.name}</p>
+                <p>{request.author}</p>
+              </ul>
+            </div>
         </div>
   );
   }

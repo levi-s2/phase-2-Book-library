@@ -2,16 +2,17 @@
     text-align: center;
     border: grey solid 1px;
     padding: 1rem;
-    width: 15rem;
-    height: 25rem;
+    width: 20rem;
+    height: 30rem;
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #e04b52
   }
   img {  
-    object-fit: cover;  
-    max-width: 100%;
+    object-fit:cover;  
+    max-width: 200px;
     max-height: 100%;
-    width: auto; 
-  max-height: 100%;
+    width:fit-content; 
+  max-height: 80%;
+  margin: auto;
   }
