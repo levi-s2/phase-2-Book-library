@@ -1,12 +1,26 @@
 import React from "react";
 import "./BooksCard.css"
 
-function BooksCard({ name, author, image}) {
+function BooksCard({ book, handleFavoriteBook }) {
+function handleClick() {
+    fetch(`http://localhost:3000/popularBooks/${book.id}`, {
+        method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      isFavorite: !book.isFavorite,
+    }),
+    })
+    .then(r => r.json())
+    .then(updatedBook => handleFavoriteBook(updatedBook))
+}
     return (
         <div className="bookCard">
-            <h1>{name}</h1>
-            <p>{author}</p>
-            <img src={image} alt="book"/>
+            <h1>{book.name}</h1>
+            <p>{book.author}</p>
+            <button onClick={handleClick}>{book.isFavorite ? "Favorite ☆" : "Add to favorites"}</button>
+            <img src={book.imgURL} alt="book"/>
         </div>
     )
 }

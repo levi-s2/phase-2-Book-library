@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import NavBar from "./NavBar";
 
-function Request() {
+function Request({ handleAddItem}) {
 const [title, setTitle] = useState("")
 const [author, setAuthor] = useState("")
 const [image, setImage] = useState("")
-const [request, setRequest] = useState([])
+const [favorite, setFavorite] = useState("")
 
 function handleSubmit(e) {
     e.preventDefault();
     const itemData = {
         name: title,
-        author: author
+        author: author,
+        favorite: favorite
     }
     fetch("http://localhost:3000/popularBooks", {
         method: "POST",
@@ -21,14 +21,11 @@ function handleSubmit(e) {
         body: JSON.stringify(itemData),
     })
     .then(r => r.json())
-    .then(newItem => setRequest(newItem))
+    .then(newItem => handleAddItem(newItem))
   }
 
   return (
     <div>
-       <header>
-        <NavBar />
-       </header>
       <h1>Request a Book</h1>
     <form className="NewItem" onSubmit={handleSubmit}>
             <input
@@ -54,13 +51,6 @@ function handleSubmit(e) {
         />
         <button type="submit">submit</button>
             </form>
-            <div>
-              <h2>Requested Books:</h2>
-              <ul>
-                <p>{request.name}</p>
-                <p>{request.author}</p>
-              </ul>
-            </div>
         </div>
   );
   }

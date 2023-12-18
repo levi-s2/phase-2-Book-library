@@ -1,6 +1,6 @@
 import Home from "./Home";
-import Books from "./Books";
-import Request from "./Request";
+import Favorites from "./Favorites";
+import About from "./About";
 import ErrorPage from "./ErrorPage";
 
 const routes = [
@@ -10,13 +10,13 @@ const routes = [
         errorElement: <ErrorPage />
       },
       {
-        path: "/Books",
-        element: <Books />,
+        path: "/Favorites",
+        element: <Favorites />,
         errorElement: <ErrorPage />
       },
       {
-        path: "/Request",
-        element: <Request />,
+        path: "/About",
+        element: <About />,
         errorElement: <ErrorPage />
       }
 ]

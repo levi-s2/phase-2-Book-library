@@ -8,8 +8,8 @@ function NavBar() {
         <nav>
             <ul>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/Books">Books</NavLink>
-            <NavLink to="/Request">Request</NavLink>
+            <NavLink to="/Favorites">Favorites</NavLink>
+            <NavLink to="/About">About</NavLink>
             </ul>
         </nav>
     );
