@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import Books from "./Books"
 import Request from "./Request"
 import NavBar from "./NavBar";
+import Favorites from "./Favorites";
 import "./Home.css"
 
 function Home() {
@@ -19,7 +20,7 @@ function Home() {
 
       function handleFavoriteBook(updatedBook) {
         const updatedBooks = books.map(book => {
-            if (book.id ===updatedBook.id) {
+            if (book.id === updatedBook.id) {
                 return updatedBook
             } else {
                 return book
@@ -27,6 +28,12 @@ function Home() {
         })
         setBooks(updatedBooks)
       }
+      
+      const allFavorites = books.filter(book => book.isFavorite === true, () => {
+        return (
+            <Favorites allFavorites={allFavorites}/>
+        )
+      })
 
     return (
         <div className="home">

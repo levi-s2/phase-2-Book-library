@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 
 function Request({ handleAddItem}) {
-const [title, setTitle] = useState("")
-const [author, setAuthor] = useState("")
-const [image, setImage] = useState("")
-const [favorite, setFavorite] = useState("")
+const [title, setTitle] = useState("");
+const [author, setAuthor] = useState("");
+const [image, setImage] = useState("");
 
 function handleSubmit(e) {
     e.preventDefault();
     const itemData = {
         name: title,
         author: author,
-        favorite: favorite
+        imgUrl: image
     }
     fetch("http://localhost:3000/popularBooks", {
         method: "POST",
