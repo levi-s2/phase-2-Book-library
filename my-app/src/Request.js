@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Request({ handleAddItem}) {
+function Request({ handleAddItem }) {
 const [title, setTitle] = useState("");
 const [author, setAuthor] = useState("");
 const [image, setImage] = useState("");

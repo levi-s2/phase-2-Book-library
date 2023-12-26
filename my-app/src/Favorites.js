@@ -1,7 +1,13 @@
 import React from "react";
+import FavoriteCard from "./FavoriteCard"
 import NavBar from "./NavBar";
 
-function Favorites({ allFavorites}) {
+function Favorites({ allFavorites }) {
+    const allFavs = allFavorites.map(f => {
+        return (
+        <FavoriteCard f={f}/>)
+    })
+
     return (
         <>
         <header>
@@ -9,7 +15,7 @@ function Favorites({ allFavorites}) {
         </header>
         <h1>Favorite Books</h1>
         <div>
-            <p>{allFavorites.name}</p>
+            {allFavs}
         </div>
         </>
     )

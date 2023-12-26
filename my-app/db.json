@@ -2,14 +2,14 @@
   "popularBooks": [
     {
       "id": 0,
-      "isFavorite": true,
+      "isFavorite": false,
       "name": "Don Quixote",
       "author": "Miguel de Cervantes",
       "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM9Wr8_pMowlwxxNkH5qfxj7rPVVyLV5Eni3TBev7OcaLTkv5oHFd6biiJ20BEyUP6jOo&usqp=CAU"
     },
     {
       "id": 1,
-      "isFavorite": true,
+      "isFavorite": false,
       "name": "The Divine Comedy",
       "author": "Dante Alighieri",
       "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORUY1hSkajLOMH2GsR9BrC4uwx4xjpYZTnEnx9XT5nQpMfKDrxsoi3dEftM5ihX5XW7A&usqp=CAU"
@@ -23,7 +23,7 @@
     },
     {
       "id": 3,
-      "isFavorite": true,
+      "isFavorite": false,
       "name": "The Odyssey",
       "author": "Homer",
       "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShh2ytsVe5-agGpwgqV6jO369L--TEwrK9JA&usqp=CAU"
@@ -58,14 +58,14 @@
     },
     {
       "id": 8,
-      "isFavorite": false,
+      "isFavorite": true,
       "name": "King Lear",
       "author": " William Shakespeare",
       "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/08/66/98/9780866987974.jpg/jcr:content/9780866987974.jpg"
     },
     {
       "id": 9,
-      "isFavorite": false,
+      "isFavorite": true,
       "name": "Alice's Adventures in Wonderland",
       "author": "Lewis Carroll",
       "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/19/88/96/9781988963372.jpg/jcr:content/9781988963372.jpg"
