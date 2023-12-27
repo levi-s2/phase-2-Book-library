@@ -1,4 +1,7 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button';
 import "./BooksCard.css"
 
 function BooksCard({ book, handleFavoriteBook }) {
@@ -17,10 +20,16 @@ function handleClick() {
 }
     return (
         <div className="bookCard">
-            <h1>{book.name}</h1>
-            <p>{book.author}</p>
-            <button onClick={handleClick}>{book.isFavorite ? "Favorite ☆" : "Add to favorites"}</button>
-            <img src={book.imgURL} alt="book"/>
+            <Card style={{ width: '18rem', display: "inline-block" }}>
+                <Card.Body>
+                    <Card.Title>{book.name}</Card.Title>
+                    <Card.Text>{book.author}</Card.Text>
+                </Card.Body>
+                <Card.Img variant="bottom" src={book.imgURL} />
+                <Button onClick={handleClick}>
+                    {book.isFavorite ? "Favorite ☆" : "Add to favorites"}
+                    </Button>
+            </Card>
         </div>
     )
 }
