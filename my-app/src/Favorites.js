@@ -3,21 +3,20 @@ import FavoriteCard from "./FavoriteCard"
 import NavBar from "./NavBar";
 
 function Favorites({ allFavorites }) {
-    const allFavs = allFavorites.map(f => {
-        return (
-        <FavoriteCard f={f}/>)
-    })
 
     return (
-        <>
+        <div>
         <header>
             <NavBar />
         </header>
-        <h1>Favorite Books</h1>
+        <h1 style={{ color: "white"}}>Favorite Books</h1>
         <div>
-            {allFavs}
+            {allFavorites.map(f => {
+        return (
+        <FavoriteCard f={f}/>)
+    })}
         </div>
-        </>
+        </div>
     )
 }
 

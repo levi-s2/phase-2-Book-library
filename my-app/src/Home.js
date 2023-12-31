@@ -33,12 +33,11 @@ function Home() {
       const allFavorites = books.filter(b => b.isFavorite === true)
    
     return (
-        <div className="home">
+        <div className="bg-dark">
             <header>
             <NavBar />
             </header>
             <div className="Books">
-                <h1>Books</h1>
             <Books books={books} handleFavoriteBook={handleFavoriteBook}/>
             </div>
             <Request handleAddItem={handleAddItem}/>

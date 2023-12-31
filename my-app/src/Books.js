@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 import BooksCard from "./BooksCard";
 
 function Books({ books, handleFavoriteBook }) {
@@ -11,6 +12,7 @@ function Books({ books, handleFavoriteBook }) {
 
     return ( 
         <div>
+            <h1 style={{ color: "white"}}> All Books</h1>
             {mappedBooks}
         </div>
     )
