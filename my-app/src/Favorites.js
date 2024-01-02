@@ -1,20 +1,22 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 import FavoriteCard from "./FavoriteCard"
-import NavBar from "./NavBar";
 
-function Favorites({ allFavorites }) {
+
+function Favorites() {
+const {allFavorites} = useOutletContext()
+console.log(allFavorites)
+const favs = allFavorites.map(f => {
+    return (
+    <FavoriteCard f={f}/>)
+})
+console.log(favs)
 
     return (
         <div>
-        <header>
-            <NavBar />
-        </header>
         <h1 style={{ color: "white"}}>Favorite Books</h1>
-        <div>
-            {allFavorites.map(f => {
-        return (
-        <FavoriteCard f={f}/>)
-    })}
+        <div style={{color: "white"}}>
+        {favs}
         </div>
         </div>
     )

@@ -1,8 +1,10 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import BooksCard from "./BooksCard";
 
-function Books({ books, handleFavoriteBook }) {
+function Books() {
+    const {books, handleFavoriteBook} = useOutletContext()
     
     const mappedBooks = books.map(book => {
         return (

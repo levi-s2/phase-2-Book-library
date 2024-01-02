@@ -9,14 +9,14 @@
     },
     {
       "id": 1,
-      "isFavorite": false,
+      "isFavorite": true,
       "name": "The Divine Comedy",
       "author": "Dante Alighieri",
       "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORUY1hSkajLOMH2GsR9BrC4uwx4xjpYZTnEnx9XT5nQpMfKDrxsoi3dEftM5ihX5XW7A&usqp=CAU"
     },
     {
       "id": 2,
-      "isFavorite": false,
+      "isFavorite": true,
       "name": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfi4CpGrqQPAt_I5Dp-WAw4yZxO7h7TL1_6Ad8tvuX94v-yR8OEacS13228EeBeRc7IbY&usqp=CAU"
@@ -69,18 +69,6 @@
       "name": "Alice's Adventures in Wonderland",
       "author": "Lewis Carroll",
       "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/19/88/96/9781988963372.jpg/jcr:content/9781988963372.jpg"
-    },
-    {
-      "name": "dfg",
-      "author": "dfg",
-      "imgUrl": "",
-      "id": 10
-    },
-    {
-      "name": "dfg",
-      "author": "dfg",
-      "imgUrl": "",
-      "id": 11
     }
   ]
 }

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button'
 
 
-function Request({ handleAddItem }) {
+function Request() {
+  const {handleAddItem} = useOutletContext()
+  
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [image, setImage] = useState("");

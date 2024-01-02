@@ -12,6 +12,8 @@ function NavBar() {
         <Container>
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Books">Books</Nav.Link>
+            <Nav.Link href="/Request">Request</Nav.Link>
             <Nav.Link href="/Favorites">Favorites</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
           </Nav>

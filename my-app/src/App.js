@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from "react"; 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Books from "./Books"
-import Request from "./Request"
+import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
-import Favorites from "./Favorites"
-import "./Home.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Home() {
+
+function App() {
     const [books, setBooks] = useState([])
 
     useEffect(() => {
@@ -37,13 +35,12 @@ function Home() {
             <header>
             <NavBar />
             </header>
-            <div className="Books">
-            <Books books={books} handleFavoriteBook={handleFavoriteBook}/>
-            </div>
-            <Request handleAddItem={handleAddItem}/>
-            <Favorites allFavorites={allFavorites}/>
+            <Outlet context={{books: books, 
+                handleFavoriteBook: handleFavoriteBook,
+                handleAddItem: handleAddItem,
+                allFavorites: allFavorites}}/>
         </div>
     )
 }
 
-export default Home
+export default App
