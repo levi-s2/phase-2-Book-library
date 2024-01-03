@@ -58,14 +58,14 @@
     },
     {
       "id": 8,
-      "isFavorite": true,
+      "isFavorite": false,
       "name": "King Lear",
       "author": " William Shakespeare",
       "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/08/66/98/9780866987974.jpg/jcr:content/9780866987974.jpg"
     },
     {
       "id": 9,
-      "isFavorite": true,
+      "isFavorite": false,
       "name": "Alice's Adventures in Wonderland",
       "author": "Lewis Carroll",
       "imgURL": "https://press.uchicago.edu/.imaging/mte/ucp/medium/dam/ucp/books/jacket/978/19/88/96/9781988963372.jpg/jcr:content/9781988963372.jpg"

@@ -1,10 +1,11 @@
-import React from "react";
+import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import "./BooksCard.css"
 
 function BooksCard({ book, handleFavoriteBook }) {
+    //patch request used to update the isFavorite key in the book obj
 function handleClick() {
     fetch(`http://localhost:3000/popularBooks/${book.id}`, {
         method: "PATCH",

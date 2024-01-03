@@ -6,10 +6,13 @@ import Button from 'react-bootstrap/Button'
 
 function Request() {
   const {handleAddItem} = useOutletContext()
-  
+
+  //all state variables used to make the controlled form input
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
   const [image, setImage] = useState("");
+
+  //creates a new obj using state variables as the value to the corresponding keys
   function handleSubmit(e) {
       e.preventDefault();
       const itemData = {
@@ -17,6 +20,8 @@ function Request() {
           author: author,
           imgUrl: image
       }
+
+    //post request that updates the database and posts the new obj sent from the form submit
       fetch("http://localhost:3000/popularBooks", {
           method: "POST",
           headers: {
@@ -27,6 +32,7 @@ function Request() {
       .then(r => r.json())
       .then(newItem => handleAddItem(newItem))
     }
+
     return (
       <div>
         <h1 style={{ color: "white"}}>Request a Book</h1>
@@ -57,4 +63,5 @@ function Request() {
           </div>
     );
     }
-  export default Request
+
+  export default Request;

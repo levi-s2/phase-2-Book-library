@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react"; 
-import { Outlet } from "react-router-dom";
+import { Outlet }from "react-router-dom";
 import NavBar from "./NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
+    //state variable that holds all book data
     const [books, setBooks] = useState([])
 
     useEffect(() => {
@@ -16,7 +17,8 @@ function App() {
     function handleAddItem(newItem) {
         setBooks([...books, newItem]);
       }
-
+      
+      //function to handle the favorite button logic and add the clicked book to the favorites
       function handleFavoriteBook(updatedBook) {
         const updatedBooks = books.map(book => {
             if (book.id === updatedBook.id) {
